@@ -32,9 +32,11 @@ function FunctionType (value, strict) {
 
 const TxConfig = typeforce.compile({
   version: typeforce.Number,
+  time: typeforce.Number,
   vin: typeforce.Array,
   vout: typeforce.Array,
-  locktime: typeforce.Number
+  locktime: typeforce.Number,
+  data: typeforce.Object
 })
 
 const TxVin = typeforce.compile({
